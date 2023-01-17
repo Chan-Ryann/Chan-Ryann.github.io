@@ -12,12 +12,90 @@ body {
   text-align: center;
 }
 
-.vert-text h1 {
+.vert-text h1{
   padding: 0;
   margin: 0;
   font-size: 4.5em;
   font-weight: 700;
 }
+
+.vert-text span{
+  padding: 0;
+  margin: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+.fadeup{
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease 6s forwards;
+}
+
+button {
+  outline: none;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+.custom-btn {
+  width: 210px;
+  height: 60px;
+  padding: 10px 25px;
+  border: 2px solid rgb(0, 0, 0);
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+}
+
+.btn-10 {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn-10:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+}
+.btn-10:hover {
+  color: white;
+}
+.btn-10:hover:after {
+  background: black;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+  
+@keyframes typewriter {
+    to {
+      left: 100%;
+    }
+  }
+  
+@keyframes blink {
+    to {
+      background: transparent;
+    }
+  }
+
+@keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
 /* Side Menu */
 
@@ -25,7 +103,8 @@ body {
   margin-right: -250px;
   right: 0;
   width: 250px;
-  background: #000;
+  background: #f8f9fa;
+  opacity: 0.92;
   position: fixed;
   height: 100%;
   overflow-y: auto;
@@ -52,13 +131,14 @@ body {
 }
 
 .sidebar-nav li a {
-  color: #999999;
+  font-size: large;
+  color: #000000;
   display: block;
   text-decoration: none;
 }
 
 .sidebar-nav li a:hover {
-  color: #fff;
+  color: rgb(131, 131, 131);
   background: rgba(255,255,255,0.2);
   text-decoration: none;
 }
@@ -71,15 +151,15 @@ body {
 .sidebar-nav > .sidebar-brand {
   height: 55px;
   line-height: 55px;
-  font-size: 18px;
 }
 
 .sidebar-nav > .sidebar-brand a {
-  color: #999999;
+  font-size: x-large;
+  color: #000000;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-  color: #fff;
+  color: rgb(131, 131, 131);
   background: none;
 }
 
@@ -132,11 +212,17 @@ body {
   color: #ffffff;
 }
 
+.skills {
+  background: #ffffff;
+  padding: 50px 0;
+  color: black;
+}
+
 .service-item {
   margin-bottom: 15px;
 }
 
-i.service-icon {
+.service-icon {
   border: 3px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
