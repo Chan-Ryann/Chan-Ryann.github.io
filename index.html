@@ -7,7 +7,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Stylish Portfolio Template for Bootstrap</title>
+  <title>Chan Ryan</title>
 
   <!-- Bootstrap core CSS -->
   <link href="css/bootstrap.css" rel="stylesheet">
@@ -15,6 +15,11 @@
   <!-- Add custom CSS here -->
   <link href="css/stylish-portfolio.css" rel="stylesheet">
   <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +27,7 @@
   <!-- Side Menu -->
   <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="fa fa-bars"></i></a>
   <div id="sidebar-wrapper">
-    <ul class="sidebar-nav">
+    <ul class="sidebar-nav" style="font-family: 'Merriweather', serif;font-size: 1.8rem;">
       <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
       <li class="sidebar-brand"><a href="http://startbootstrap.com">Ryan Chan</a></li>
       <li><a href="#top"><span class="fa fa-home mr-3"></span> Home</a></li>
@@ -37,11 +42,11 @@
   <div id="top" class="header">
     <div class="vert-text">
       <div id="typed-strings">
-        <h1>Hello, my name is Ryan <br>Nice to meet you!</h1>
+        <h1>Hello, I'm Ryan Chan</h1>
       </div>
       <span id="typed"></span>
       <h3 class="fadeup">An Aspiring Data Scientist/ Analytics Student</h3>
-      <button class="custom-btn btn-10 fadeup">View my projects</button>
+      <button class="custom-btn btn-10 fadeup" onclick="location.href='#portfolio'">View my projects</button>
     </div>
   </div>
   <!-- /Full Page Image Header Area -->
@@ -51,41 +56,44 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-md-offset-4 text-center">
-          <h2>Skills Expertise</h2>
-          <hr style="border-color: black;">
+          <h2 style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 3.5rem;">My Skills Expertise</h2>
+          <hr style="border-color: black; border-top: 4px solid #000000;">
+          <br>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-2 col-md-offset-2 text-center">
+        <div class="col-md-3 text-center">
           <div class="service-item">
             <img src="img/python.jpg" alt="" class="service-icon">
-            <h3 style="font-weight: bold;">AI/ML</h3>
+            <h3 style="font-weight: bold;font-family: 'Merriweather', serif; font-size: 2.7rem;">AI/ML</h3>
             <br>
-            <h5 style="color: black; font-size: 1.8rem;">Python<br><br>Tensorflow/Keras<br><br>Machine Learning<br></h5>
+            <h5 style="color: black; font-size: 1.9rem;font-family: 'Merriweather', serif;">Python<br><br>Tensorflow/Keras<br><br>Machine Learning<br></h5>
           </div>
         </div>
-        <div class="col-md-2 text-center">
+        <div class="col-md-3 text-center">
           <div class="service-item">
             <img src="img/tableau.png" alt="" class="service-icon">
-            <h3 style="font-weight: bold;">Data Analytics</h3>
+            <h3 style="font-weight: bold;font-family: 'Merriweather', serif;font-size: 2.7rem;">Data Analytics</h3>
             <br>
-            <h5 style="color: black; font-size: 1.8rem;">Data Preprocessing<br><br>Data Visualisation<br><br>Presenting/Explaining Findings<br></h5>
+            <h5 style="color: black; font-size: 1.9rem;font-family: 'Merriweather', serif;">Data Preprocessing<br><br>Data
+              Visualisation<br><br>Presenting/Explaining Findings<br></h5>
           </div>
         </div>
-        <div class="col-md-2 text-center">
+        <div class="col-md-3 text-center">
           <div class="service-item">
             <img src="img/git.png" alt="" class="service-icon">
-            <h3 style="font-weight: bold;">DevOps</h3>
+            <h3 style="font-weight: bold;font-family: 'Merriweather', serif;font-size: 2.7rem;">DevOps</h3>
             <br>
-            <h5 style="color: black; font-size: 1.8rem;">SQL<br><br>Scrum<br><br>Git<br></h5>
+            <h5 style="color: black; font-size: 1.9rem;font-family: 'Merriweather', serif;">SQL<br><br>Scrum<br><br>Git<br></h5>
           </div>
         </div>
-        <div class="col-md-2 text-center">
+        <div class="col-md-3 text-center">
           <div class="service-item">
             <img src="img/vsc.jpg" alt="" class="service-icon">
-            <h3 style="font-weight: bold;">Miscellaneous</h3>
+            <h3 style="font-weight: bold;font-family: 'Merriweather', serif;font-size: 2.7rem;">Miscellaneous</h3>
             <br>
-            <h5 style="color: black; font-size: 1.8rem;">JavaScript<br><br>UI/UX<br><br>Full Stack Web Development<br></h5>
+            <h5 style="color: black; font-size: 1.9rem;font-family: 'Merriweather', serif;">JavaScript<br><br>UI/UX<br><br>Full Stack Web Development<br>
+            </h5>
           </div>
         </div>
       </div>
@@ -97,38 +105,45 @@
   <div id="services" class="services">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 col-md-offset-4 text-center">
-          <h2>My Education Experience</h2>
-          <hr>
+        <div class="col-md-6 col-md-offset-3 text-center">
+          <h2 style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 3.5rem;">My Education Experience</h2>
+          <hr style="border-color: black; border-top: 4px solid #000000;">
+          <br>
+          <br>
         </div>
       </div>
       <div class="row">
         <div class="col-md-2 col-md-offset-2 text-center">
           <div class="service-item">
             <img src="img/primary.png" alt="" class="service-icon">
-            <h4>Pei Chun Public School</h4>
-            <h5 style="color: black; font-size: medium;">Student<br><br>Jan 2010 - Dec 2015</h5>
+            <h4 style="font-family: 'Merriweather', serif;font-size: 1.8rem; font-weight: 1000;">Pei Chun Public School</h4>
+            <br>
+            <h5 style="color: black; font-size: 1.5rem;font-family: 'Merriweather', serif; font-weight: 500;">Student<br><br>Jan 2010 - Dec 2015</h5>
           </div>
         </div>
         <div class="col-md-2 text-center">
           <div class="service-item">
             <img src="img/Secondary.png" alt="" class="service-icon">
-            <h4>St. Gabriel's Secondary School</h4>
-            <h5 style="color: black; font-size: medium;">Student<br><br>Jan 2016 - Dec 2019</h5>
+            <h4 style="font-family: 'Merriweather', serif;font-size: 1.8rem; font-weight: 1000;">St. Gabriel's Secondary School</h4>
+            <br>
+            <h5 style="color: black; font-size: 1.5rem;font-family: 'Merriweather', serif; font-weight: 500;">Student<br><br>Jan 2016 - Dec 2019</h5>
           </div>
         </div>
         <div class="col-md-2 text-center">
           <div class="service-item">
             <img src="img/poly.jpg" alt="" class="service-icon">
-            <h4>Singapore Polytechnic</h4>
-            <h5 style="color: black; font-size: medium;">Diploma in Applied Artificial Intelligence and Analytics<br>Student<br><br>Apr 2020 - Present</h5>
+            <h4 style="font-family: 'Merriweather', serif;font-size: 1.8rem; font-weight: 1000;">Singapore Polytechnic</h4>
+            <br>
+            <h5 style="color: black; font-size: 1.5rem;font-family: 'Merriweather', serif; font-weight: 500;">Diploma in Applied Artificial Intelligence and
+              Analytics<br><br>Apr 2020 - Present</h5>
           </div>
         </div>
         <div class="col-md-2 text-center">
           <div class="service-item">
             <img src="img/future.png" alt="" class="service-icon">
-            <h4>My Dream University</h4>
-            <h5 style="color: black; font-size: medium;">Excited for what the future may hold</h5>
+            <h4 style="font-family: 'Merriweather', serif;font-size: 1.8rem; font-weight: 1000;">My Dream University</h4>
+            <br>
+            <h5 style="color: black; font-size: 1.5rem;font-family: 'Merriweather', serif; font-weight: 500;">Excited for what the future may hold</h5>
           </div>
         </div>
       </div>
@@ -140,11 +155,31 @@
   <div id="about" class="intro">
     <div class="container">
       <div class="row">
-        <div class="col-md-6 col-md-offset-3 text-center">
-          <h2>Personal Details</h2>
-          <p class="lead">This template really has it all. It's up to you to customize it to your liking! It features
-            some fresh photography courtesy of <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to
-              the Stock Photo</a>.</p>
+        <div class="col-md-4 col-md-offset-4 text-center">
+          <h2 style="font-weight: bold; font-family: 'Merriweather', serif; font-size: 3.5rem;">Personal Details</h2>
+          <hr style="border-color: black; border-top: 4px solid #000000;">
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+          <p class="lead" style="border-left: 3px solid #7fbbda; padding: 20px 25px 20px 25px; font-weight: 500; font-family: 'Merriweather', serif; font-size: 1.75rem;">Hello, my name is Ryan.
+            I am a hardworking, dedicated and ambitious individual with a passion for learning and personal growth. I am
+            currently pursuing my studies in programming and machine learning.
+            I am a proactive person who enjoys taking on new challenges and finding creative solutions. <br><br> I have
+            a great passion for travelling and experiencing new cultures, which allows me to broaden my perspective and
+            understanding of the world.
+            I am also passionate about learning Japanese language and culture. My most favourite sport is skiing, but
+            unfortunately, I don't get to do it often. <br><br> In my free time, I enjoy outdoor activities, reading,
+            watching documentaries, and anime,
+            and spending time with my friends and family. I also participate in sports like bowling. I am always looking
+            for opportunities to expand my knowledge and skills and I am excited to see what the future holds</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1 col-md-offset-1">
+          <a href="#" class="btn btn-lg btn-primary" style="padding-left: 30px;padding-right: 30px;">About Me</a>
         </div>
       </div>
     </div>
@@ -156,36 +191,44 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4 col-md-offset-4 text-center">
-          <h2>My Latest projects</h2>
-          <hr>
+          <h2 style="color: rgb(255, 255, 255); font-weight: bold; font-family: 'Merriweather', serif; font-size: 3.5rem;">My Latest Projects</h2>
+          <hr style="border-color: rgb(255, 255, 255); border-top: 4px solid #ffffff;">
+          <br>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-md-offset-2 text-center">
           <div class="portfolio-item">
-            <a href="#"><img class="img-portfolio img-responsive" src="img/portfolio-1.jpg"></a>
-            <h4>Cityscape</h4>
+            <a href="#"><img class="img-portfolio img-responsive" src="img/GAN.png"></a>
+            <h4 style="font-size: 1.8rem;font-family: 'Merriweather', serif; font-weight: 500; color: #333333">Wasserstein GAN With Adaptive Discriminator Augmentation For CIFAR10 (Tensorflow/Keras)</h4>
           </div>
         </div>
         <div class="col-md-4 text-center">
           <div class="portfolio-item">
-            <a href="#"><img class="img-portfolio img-responsive" src="img/portfolio-2.jpg"></a>
-            <h4>Is That On Fire?</h4>
+            <a href="#"><img class="img-portfolio img-responsive" src="img/lunar.png"></a>
+            <h4 style="font-size: 1.8rem;font-family: 'Merriweather', serif; font-weight: 500; color: #333333">Landing a lunar lander using Reinforcement Learning (Tensorflow/Keras)</h4>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="col-md-4 col-md-offset-2 text-center">
           <div class="portfolio-item">
-            <a href="#"><img class="img-portfolio img-responsive" src="img/portfolio-3.jpg"></a>
-            <h4>Stop Sign</h4>
+            <a href="#"><img class="img-portfolio img-responsive" src="img/PAI.png"></a>
+            <h4 style="font-size: 1.8rem;font-family: 'Merriweather', serif; font-weight: 500; color: #333333">Advanced Data Preprocessing on large taxi dataset and setting up Machine Learning Pipeline<br>(Python,
+              scikit-Learn)</h4>
           </div>
         </div>
         <div class="col-md-4 text-center">
           <div class="portfolio-item">
-            <a href="#"><img class="img-portfolio img-responsive" src="img/portfolio-4.jpg"></a>
-            <h4>Narrow Focus</h4>
+            <a href="#"><img class="img-portfolio img-responsive" src="img/Devops.png"></a>
+            <h4 style="font-size: 1.8rem;font-family: 'Merriweather', serif; font-weight: 500; color: #333333">ASL Hand Sign Language Translator amd Interpretor<br>(Python, HTML, Flask, Tensorflow/Keras)</h4>
           </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-md-offset-4 text-center">
+          <br>
+          <button class="custom-btn2 btn2-10">View More</button>
         </div>
       </div>
     </div>
@@ -197,9 +240,8 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-md-offset-3 text-center">
-          <h3>Contact Me</h3>
-          <a href="#" class="btn btn-lg btn-default">Click Me!</a>
-          <a href="#" class="btn btn-lg btn-primary">Look at Me!</a>
+          <h3 style="font-size: 2.5rem;font-family: 'Merriweather', serif; font-weight: bold; color: #333333">Contact Me</h3>
+          <a href="#" class="btn btn-lg btn-default">Ryan.Chan@gmail.com</a>
         </div>
       </div>
     </div>
@@ -216,7 +258,7 @@
     $('document').ready(function () {
       var typed = new Typed('#typed', {
         stringsElement: '#typed-strings',
-        typeSpeed:100
+        typeSpeed: 90
       });
     }
     )

@@ -4,6 +4,8 @@ html,
 body {
   height: 100%;
   width: 100%;
+  font-family: 'Merriweather', serif;
+  scroll-behavior: smooth;
 }
 
 .vert-text {
@@ -24,12 +26,15 @@ body {
   margin: 0;
   font-size: 4.5em;
   font-weight: 700;
+  color: #000000;
 }
 
 .fadeup{
   opacity: 0;
   transform: translateY(3rem);
-  animation: fadeInUp 2s ease 6s forwards;
+  animation: fadeInUp 2s ease 3.5s forwards;
+  color: #000000;
+  font-family: 'Merriweather', serif;
 }
 
 button {
@@ -38,18 +43,34 @@ button {
   margin-bottom: 1%;
 }
 .custom-btn {
-  width: 210px;
+  width: 230px;
   height: 60px;
   padding: 10px 25px;
-  border: 2px solid rgb(0, 0, 0);
-  font-family: 'Lato', sans-serif;
+  border: 2px solid #000000;
+  font-family: 'Merriweather', serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  color: rgb(0, 0, 0);
+  color: #000000;
+  font-size: 2rem;
+}
+
+.custom-btn2 {
+  width: 180px;
+  height: 50px;
+  padding: 10px 25px;
+  border: 2px solid #000000;
+  font-family: 'Merriweather', serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  color: #000000;
   font-size: 2rem;
 }
 
@@ -71,6 +92,10 @@ button {
 }
 .btn-10:hover {
   color: white;
+}
+.btn2-10:hover {
+  color: white;
+   background: black;
 }
 .btn-10:hover:after {
   background: black;
@@ -191,7 +216,19 @@ button {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url('../img/bg.jpg') no-repeat center center fixed; 
+  background: url('../img/bg.png') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.header2 {
+  display: table;
+  height: 40%;
+  width: 100%;
+  position: relative;
+  background: url('../img/bg.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -207,15 +244,17 @@ button {
 /* Services */
 
 .services {
-  background: #7fbbda;
+  background: #F5E6C4;
   padding: 50px 0;
-  color: #ffffff;
+  color: #333333;
+  font-family: 'Merriweather', serif;
 }
 
 .skills {
   background: #ffffff;
   padding: 50px 0;
   color: black;
+  font-family: 'Merriweather', serif;
 }
 
 .service-item {
@@ -252,6 +291,8 @@ button {
 
 .portfolio {
   padding: 50px 0;
+  background: #9AD5E3;
+  color: white;
 }
 
 .portfolio-item {
@@ -266,9 +307,9 @@ button {
 /* Call to Action */
 
 .call-to-action {
-  color: #ffffff;
-  background: #0a5175;
-  padding: 50px 0;
+  color: #000000;
+  background: #ffffff;
+  padding: 35px 0;
 }
 
 .call-to-action .btn {
